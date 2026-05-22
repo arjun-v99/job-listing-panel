@@ -39,6 +39,7 @@ class AuthController extends Controller
             'experience'    => $request->experience,
             'notice_period' => $request->notice_period,
             'skills'        => $request->skills,
+
             'location_id'   => $request->location_id,
             'resume'        => $resumePath,
             'photo'         => $photoPath,

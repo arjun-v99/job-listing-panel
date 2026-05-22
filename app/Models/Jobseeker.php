@@ -44,19 +44,16 @@ class JobSeeker extends Model
             ->withTimestamps();
     }
 
-    // Helper: full resume URL
     public function getResumeUrlAttribute(): string
     {
         return Storage::url($this->resume);
     }
 
-    // Helper: full photo URL
     public function getPhotoUrlAttribute(): string
     {
         return Storage::url($this->photo);
     }
 
-    // Helper: skills as comma string
     public function getSkillsStringAttribute(): string
     {
         return implode(', ', $this->skills ?? []);

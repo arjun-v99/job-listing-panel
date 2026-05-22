@@ -12,7 +12,7 @@ use Illuminate\View\View;
 
 class RecruiterController extends Controller
 {
-    // ── Dashboard ─────────────────────────────────────────────────────────
+
 
     public function dashboard(): View
     {
@@ -25,7 +25,7 @@ class RecruiterController extends Controller
         return view('recruiter.dashboard', compact('stats'));
     }
 
-    // ── Job Post CRUD ──────────────────────────────────────────────────────
+
 
     public function jobPosts(): View
     {
@@ -77,7 +77,7 @@ class RecruiterController extends Controller
         return redirect()->route('recruiter.job-posts')->with('success', 'Job post deleted.');
     }
 
-    // ── Find Candidates ────────────────────────────────────────────────────
+
 
     public function findCandidates(Request $request): View
     {
